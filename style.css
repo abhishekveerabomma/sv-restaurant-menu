@@ -1,7 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Georgia', serif;
     background: #f8f1e4;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ================= COVER PAGE ================= */
@@ -48,9 +56,9 @@ body {
 /* ================= INNER PAGE ================= */
 
 .menu-wrapper {
-    max-width: 420px;
-    margin: auto;
-    padding: 20px;
+     max-width: 1200px;
+     width: 95%;
+     margin: auto;
 }
 
 .top-bar {
@@ -84,11 +92,16 @@ body {
 .menu-row {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
-    font-size: 17px;
+    padding: 10px 0;
     border-bottom: 1px dotted #b8860b;
 }
 
 .menu-row:last-child {
     border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
 }
