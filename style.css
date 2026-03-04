@@ -37,15 +37,6 @@ body {
      position: relative;
 }
 
-.restaurant-sub::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: #d4af37;
-    margin: 10px auto 0;
-    border-radius: 5px;
-}
 
 .menu-grid {
     display: grid;
